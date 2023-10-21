@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Metadatos-->
+    <meta charset="UTF-8">
+    <title>Chat Socket</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@1&family=Tilt+Neon&display=swap');
+    </style> 
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <!--Espacio en la página web que va a contener el chat-->
+    <div id ="chat-container">
+        <div id ="chat-window">
+            <!--Sección que permite ver los mensajes que salen del chat-->
+            <div id = "output"></div>             
+            <!--Sección para enviar acciones, por ejemplo aviso que entro un usuario al chat-->
+            <!--Avisa si se conecto alguien al chat, por ejemlo si entra un nuevo usuario-->
+            <div id="actions"></div> 
+            <!--Creo el campo que permite al usuario agregar su nombre de usuario-->
+            <input type ="text" id="username" placeholder="Username" >
+            <!--Creo el campo que permite al usuario ingresar mensajes-->
+            <input type ="text" id="message" placeholder="Message">
+            <!--Creo el boton que permite al usuario enviar mensajes-->
+            <button id ="send">Send</button>
+        </div>
+    </div>
+
+    <!--Esta línea de codigo le dice al html que se conocte con un servidor del socketio-->
+    <!--Para poder usar websocket-->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src ="chat.js" charset="utf-8" ></script>
+</body>
+</html>

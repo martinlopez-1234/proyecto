@@ -1,0 +1,70 @@
+/*/////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////*/
+/*En este archivo, se guardan los estilos que le aplico
+a las etiquetas del HTML
+*/
+
+/*Agrego las fuentes que voy usar en el html*/
+body {
+    font-family: 'Tilt Neon', cursive;
+}
+body {
+    font-family: 'Alegreya', serif;
+}
+
+/*Especifico el tamaño del chat en el HTML*/
+#chat-container{
+    max-width: 600PX;
+    margin: 30px auto;
+    border: 1px solid #ddd;
+    box-shadow: 1px 3 px 5px rgba(0,0,0, .5);
+}
+#chat-window {
+    padding: 14px 0;
+    margin: 0 20px;
+    border-bottom: 1px solid #e9e9e9;
+    color: #555;
+}
+#output {
+    color: #aaa;
+    padding: 14px 0;
+    margin: 0 20px;
+}
+#actions p {
+    padding: 14 px 0;
+    margin: 0 20px;
+    border-bottom: 1px solid #e9e9e9;
+    color:#555;
+}
+input {
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: 0;
+    background: #eee;
+    display: block;
+    width: 100%;
+}
+
+button{
+    background: #575ed8;
+    color:#fff;
+    font-size: 18px;
+    border: 0;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 0 0 2px 2px;
+}
+
+#chat-window {
+    /*display: flex convierte al elemento en un contendor flexible, lo que me permite usar las propiedades de flexbox*/
+    display: flex;
+    /*Esta línea establece la dirección principal en la que se apilan 
+    los elementos flexibles. 
+    En este caso, los elementos se apilan verticalmente (de arriba a abajo), 
+    porque el valor es column.*/
+    flex-direction: column;
+    /*justify-content: space-between;: Esta línea distribuye el espacio restante de manera uniforme entre los elementos flexibles
+     a lo largo del eje principal (en este caso, el eje vertical),
+    con un espacio igual en los extremos. */
+    justify-content: space-between;
+}

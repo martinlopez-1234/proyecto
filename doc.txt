@@ -1,0 +1,13 @@
+/*
+function checkFilePermissions(path, callback) {
+    fs.access(path, fs.constants.R_OK | fs.constants.W_OK, (err) => {
+        if (err) {
+            console.log(`No se puede leer o escribir el archivo ${path}`);
+            callback(false);
+        } else {
+            console.log(`Se puede leer y escribir el archivo ${path}`);
+            callback(true);
+        }
+    });
+}
+*/
